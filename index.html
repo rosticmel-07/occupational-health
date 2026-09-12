@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CdWJvrRB.css">
+  </head>
+  <body>
+    <!-- styles: sections/00-header-nav.css (+ global.css for shared tokens/utilities) -->
+<header>
+
+
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5.2 3.4 9.9 8 11 4.6-1.1 8-5.8 8-11V5l-8-3z" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        SAFEPRO
+      </a>
+      <div class="nav-links">
+        <a href="#top">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#certificates">Сертифікати</a>
+        <a href="#why">Про нас</a>
+        <a href="#contact">Контакти</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary btn-sm">Залишити заявку</a>
+        <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#top">Головна</a>
+      <a href="#services">Послуги</a>
+      <a href="#certificates">Сертифікати</a>
+      <a href="#why">Про нас</a>
+      <a href="#contact">Контакти</a>
+      <a href="#contact" class="btn btn-primary">Залишити заявку</a>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <!-- styles: sections/01-hero.css (+ global.css for shared tokens/utilities) -->
+<section class="hero" id="top">
+  <div class="dot-grid"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal in">
+      <span class="eyebrow">Ліцензовано • Атестовано • Перевірено</span>
+      <h1>Промислова безпека<br>без <em>компромісів</em></h1>
+      <p class="lead">Технічні огляди, сертифікація обладнання та навчання персоналу для підприємств, яким важливий кожен допущений висновок.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Залишити заявку</a>
+        <a href="#services" class="btn btn-outline-blue">Наші послуги</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo brackets">
+        <span class="bk-tr"></span><span class="bk-br"></span>
+        <img src="https://picsum.photos/id/1050/700/900" alt="Інженер проводить технічний огляд на промисловому об'єкті">
+      </div>
+      <div class="float-card fc-1">
+        <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5.2-3.4 9.9-8 11-4.6-1.1-8-5.8-8-11V5l8-3z" stroke="#0F4C81" stroke-width="2"/></svg></span>
+        <div><b>Ліцензовано</b><span>Держпраці України</span></div>
+      </div>
+      <div class="float-card fc-2">
+        <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#0F4C81" stroke-width="2"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6" stroke="#0F4C81" stroke-width="2"/></svg></span>
+        <div><b>27 експертів</b><span>атестованих інженерів</span></div>
+      </div>
+      <div class="float-card fc-3">
+        <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12l6 6L21 6" stroke="#0F4C81" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div><b>15+ років</b><span>досвіду на ринку</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- styles: sections/02-why-us.css (+ global.css for shared tokens/utilities) -->
+<section id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Чому обирають нас</span>
+      <h2>Партнер, якому довіряють перевірку власної репутації</h2>
+      <p>Шість причин, чому виробничі підприємства обирають SAFEPRO для супроводу з охорони та промислової безпеки.</p>
+    </div>
+    <div class="grid-6" id="whyGrid">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+      <!-- styles: sections/03-services.css (+ global.css for shared tokens/utilities) -->
+<section id="services" class="services-band">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Послуги</span>
+      <h2>Повний цикл робіт з промислової безпеки</h2>
+      <p>Від первинного аудиту до фінального дозвільного документа — беремо на себе весь технічний та паперовий процес.</p>
+    </div>
+    <div class="grid-services" id="svcGrid"></div>
+  </div>
+</section>
+
+      <!-- styles: sections/04-process.css (+ global.css for shared tokens/utilities) -->
+<section>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">Як ми працюємо</span>
+      <h2>П'ять кроків від заявки до готового висновку</h2>
+    </div>
+    <div class="process-track" id="processTrack"></div>
+  </div>
+</section>
+
+      <!-- styles: sections/05-stats.css (+ global.css for shared tokens/utilities) -->
+<section class="stats-band">
+  <div class="dot-grid"></div>
+  <div class="container grid-stats" id="statsGrid"></div>
+</section>
+
+      <!-- styles: sections/06-certificates.css (+ global.css for shared tokens/utilities) -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Сертифікати та ліцензії</span>
+      <h2>Дозвільна документація, що підтверджує кожен висновок</h2>
+      <p>Натисніть на картку, щоб переглянути документ у повному розмірі.</p>
+    </div>
+    <div class="grid-cert" id="certGrid"></div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрити">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+      <!-- styles: sections/07-testimonials.css (+ global.css for shared tokens/utilities) -->
+<section class="testi-band">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">Відгуки клієнтів</span>
+      <h2>Що кажуть підприємства, з якими ми працюємо</h2>
+    </div>
+    <div class="testi-wrap">
+      <button class="testi-arrow prev" id="testiPrev" aria-label="Попередній">&larr;</button>
+      <div style="overflow:hidden;">
+        <div class="testi-track" id="testiTrack"></div>
+      </div>
+      <button class="testi-arrow next" id="testiNext" aria-label="Наступний">&rarr;</button>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+      <!-- styles: sections/08-faq.css (+ global.css for shared tokens/utilities) -->
+<section>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow">Питання і відповіді</span>
+      <h2>Все, що варто знати перед заявкою</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+
+      <!-- styles: sections/09-contact.css (+ global.css for shared tokens/utilities) -->
+<section id="contact" class="contact-band">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Контакти</span>
+      <h2>Готові обговорити ваш об'єкт</h2>
+      <p>Залиште заявку — менеджер зв'яжеться протягом робочого дня та підкаже, які роботи потрібні саме вам.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-item">
+          <span class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.6 2z" stroke="#0F4C81" stroke-width="1.8"/></svg></span>
+          <div><b>Телефон</b><span>+38 (050) 123 45 67</span></div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="#0F4C81" stroke-width="1.8"/><path d="M4 6l8 7 8-7" stroke="#0F4C81" stroke-width="1.8"/></svg></span>
+          <div><b>Email</b><span>info@safepro.ua</span></div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z" stroke="#0F4C81" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" stroke="#0F4C81" stroke-width="1.8"/></svg></span>
+          <div><b>Адреса</b><span>м. Івано-Франківськ, вул. Промислова, 14</span></div>
+        </div>
+        <div class="info-item">
+          <span class="info-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#0F4C81" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="#0F4C81" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><b>Графік роботи</b><span>Пн–Пт, 9:00–18:00</span></div>
+        </div>
+        <div class="map-ph">Карта об'єкта — попередній перегляд</div>
+      </div>
+      <div class="form-card reveal">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="field"><label for="fName">Ім'я</label><input id="fName" type="text" placeholder="Ваше ім'я" required></div>
+            <div class="field"><label for="fPhone">Телефон</label><input id="fPhone" type="tel" placeholder="+38 (0__) ___ __ __" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="fEmail">Email</label><input id="fEmail" type="email" placeholder="you@company.com"></div>
+            <div class="field"><label for="fCompany">Компанія</label><input id="fCompany" type="text" placeholder="Назва підприємства"></div>
+          </div>
+          <div class="form-row">
+            <div class="field full">
+              <label for="fService">Послуга</label>
+              <select id="fService">
+                <option>Охорона праці</option>
+                <option>Промислова безпека</option>
+                <option>Технічна діагностика</option>
+                <option>Сертифікація обладнання</option>
+                <option>Аудит безпеки</option>
+                <option>Навчання персоналу</option>
+                <option>Розробка документації</option>
+                <option>Оцінка ризиків</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field full"><label for="fMsg">Повідомлення</label><textarea id="fMsg" placeholder="Опишіть ваш об'єкт та завдання"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Надіслати заявку</button>
+          <p class="form-note">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+    <!-- styles: sections/10-footer.css (+ global.css for shared tokens/utilities) -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5.2 3.4 9.9 8 11 4.6-1.1 8-5.8 8-11V5l-8-3z" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/></svg></span>
+          SAFEPRO
+        </a>
+        <p class="f-desc">Консалтинг з охорони праці та промислової безпеки для виробничих підприємств України.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V9.8c0-.5.2-.8.8-.8z" fill="#fff"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="4" y="9" width="3" height="10" fill="#fff"/><circle cx="5.5" cy="5.5" r="1.6" fill="#fff"/><path d="M11 9h3v1.6c.5-1 1.7-1.8 3.2-1.8 2.4 0 3.8 1.6 3.8 4.4V19h-3v-5.3c0-1.3-.5-2.2-1.7-2.2-1 0-1.5.7-1.8 1.3-.1.2-.1.5-.1.8V19h-3V9z" fill="#fff"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z" fill="#fff"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Навігація</h5>
+        <ul><li><a href="#top">Головна</a></li><li><a href="#services">Послуги</a></li><li><a href="#why">Про нас</a></li><li><a href="#contact">Контакти</a></li></ul>
+      </div>
+      <div>
+        <h5>Послуги</h5>
+        <ul><li><a href="#services">Охорона праці</a></li><li><a href="#services">Промислова безпека</a></li><li><a href="#services">Сертифікація</a></li><li><a href="#services">Навчання персоналу</a></li></ul>
+      </div>
+      <div>
+        <h5>Контакти</h5>
+        <ul><li>+38 (050) 123 45 67</li><li>info@safepro.ua</li><li>м. Івано-Франківськ, вул. Промислова, 14</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SAFEPRO. Усі права захищено.</span>
+      <span>Політика конфіденційності · Умови користування</span>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
