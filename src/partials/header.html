@@ -1,19 +1,35 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+<!-- styles: sections/00-header-nav.css (+ global.css for shared tokens/utilities) -->
+<header>
+
+
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5.2 3.4 9.9 8 11 4.6-1.1 8-5.8 8-11V5l-8-3z" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        SAFEPRO
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <div class="nav-links">
+        <a href="#top">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#certificates">Сертифікати</a>
+        <a href="#why">Про нас</a>
+        <a href="#contact">Контакти</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary btn-sm">Залишити заявку</a>
+        <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#top">Головна</a>
+      <a href="#services">Послуги</a>
+      <a href="#certificates">Сертифікати</a>
+      <a href="#why">Про нас</a>
+      <a href="#contact">Контакти</a>
+      <a href="#contact" class="btn btn-primary">Залишити заявку</a>
+    </div>
+  </nav>
 </header>
