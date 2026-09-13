@@ -1,22 +1,130 @@
-.testi-band{background:var(--gray-50);}
-.testi-wrap{position:relative;max-width:760px;margin:0 auto;}
-.testi-track{display:flex;transition:transform .5s var(--ease);}
-.testi-slide{min-width:100%;padding:0 6px;}
-.testi-card{background:var(--white);border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-md);text-align:center;}
-.stars{color:var(--orange);font-size:18px;letter-spacing:3px;margin-bottom:18px;}
-.testi-card p.quote{font-size:19px;color:var(--blue-900);line-height:1.6;margin-bottom:var(--space-3);font-weight:500;}
-.testi-person{display:flex;align-items:center;justify-content:center;gap:12px;}
-.testi-person img{width:48px;height:48px;border-radius:50%;object-fit:cover;filter:saturate(.4);}
-.testi-person b{display:block;font-size:14.5px;}
-.testi-person span{font-size:13px;color:var(--gray-500);}
-.testi-dots{display:flex;justify-content:center;gap:10px;margin-top:var(--space-4);}
-.testi-dots button{width:9px;height:9px;border-radius:50%;background:var(--gray-200);transition:.3s;}
-.testi-dots button.active{background:var(--orange);width:26px;border-radius:5px;}
-.testi-arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:var(--white);box-shadow:var(--shadow-sm);display:flex;align-items:center;justify-content:center;transition:.25s;}
-.testi-arrow:hover{background:var(--blue-700);color:#fff;}
-.testi-arrow.prev{left:-64px;}
-.testi-arrow.next{right:-64px;}
+.testi-band {
+  background: var(--gray-50);
+}
 
-@media (max-width:1080px){
-  .testi-arrow{display:none;}
+.testi-wrap {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.testi-viewport {
+  overflow: hidden;
+}
+
+.testi-track {
+  display: flex;
+  transition: transform .5s var(--ease);
+}
+
+.testi-slide {
+  min-width: 100%;
+  padding: 0 6px;
+}
+
+.testi-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.stars {
+  color: var(--orange);
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.testi-card p.quote {
+  font-size: 19px;
+  color: var(--blue-900);
+  line-height: 1.6;
+  margin-bottom: var(--space-3);
+  font-weight: 500;
+}
+
+.testi-person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.testi-person img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: saturate(.4);
+}
+
+.testi-person b {
+  display: block;
+  font-size: 14.5px;
+}
+
+.testi-info {
+  text-align: left;
+}
+
+.testi-person span {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.testi-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: var(--space-4);
+}
+
+.testi-dots button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  transition: .3s;
+}
+
+.testi-dots button.active {
+  background: var(--orange);
+  width: 26px;
+  border-radius: 5px;
+}
+
+.testi-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .25s;
+}
+
+.testi-arrow:hover {
+  background: var(--blue-700);
+  color: #fff;
+}
+
+.testi-arrow.prev {
+  left: -64px;
+}
+
+.testi-arrow.next {
+  right: -64px;
+}
+
+@media (max-width: 1439px) {
+  .testi-arrow {
+    display: none;
+  }
 }

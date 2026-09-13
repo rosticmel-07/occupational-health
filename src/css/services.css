@@ -1,21 +1,74 @@
-.services-band{background:var(--gray-50);}
-.grid-services{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);}
-.svc-card{
-  background:var(--white);border-radius:var(--radius-lg);padding:var(--space-4);
-  box-shadow:var(--shadow-sm);transition:transform .35s var(--ease),box-shadow .35s var(--ease);
-  display:flex;flex-direction:column;
-}
-.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
-.svc-ic{width:48px;height:48px;border-radius:12px;background:var(--blue-900);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-2);}
-.svc-card h3{font-size:17px;margin-bottom:8px;}
-.svc-card p{color:var(--gray-500);font-size:14.5px;flex-grow:1;margin-bottom:16px;}
-.svc-link{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--blue-700);transition:gap .25s var(--ease);}
-.svc-link:hover{gap:10px;color:var(--orange-dark);}
-
-@media (max-width:1080px){
-  .grid-services{grid-template-columns:repeat(2,1fr);}
+.services-band {
+  background: var(--gray-50);
 }
 
-@media (max-width:760px){
-  .grid-services{grid-template-columns:1fr;}
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: var(--space-3);
+}
+
+.svc-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: transform .35s var(--ease),box-shadow .35s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+
+.svc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.svc-ic {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--blue-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-2);
+}
+
+.svc-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.svc-card p {
+  color: var(--gray-500);
+  font-size: 14.5px;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--blue-700);
+  transition: gap .25s var(--ease);
+}
+
+.svc-link:hover {
+  gap: 10px;
+  color: var(--orange-dark);
+}
+
+@media (max-width: 1439px) {
+  .grid-services {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-services {
+    grid-template-columns: 1fr;
+  }
 }
